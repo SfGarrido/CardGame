@@ -19,14 +19,49 @@ public class Objects : MonoBehaviour
 
         public abstract void effect();
     }
-    void Start()
+    public class Deck
     {
-        
+        //Top of the deck is at index 0. 
+        public Card[] myCards;
+
+        public Deck()
+        {
+
+        }
+        public Card draw()
+        {
+            return myCards[0];
+        }
+        public void shuffle()
+        {
+
+        }
+    }
+    public class DiscardPile
+    {
+        public Card[] myCards;
+        public DiscardPile()
+        {
+
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public class Hand
     {
-        
+        public Card[] myCards;
+        public Hand()
+        {
+
+        }
+
+        public void rearrange()
+        {
+
+        }
+
+        public void playcard(int num)
+        {
+            myCards[num].effect();
+        }
     }
 }
