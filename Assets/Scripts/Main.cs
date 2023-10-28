@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class Main : MonoBehaviour
 {
+    int turnCounter = 0;
+    int CurrentPlayer = 0;
+    float timer = 0;
+    public PlayerManager PlayerManager;
+
     void Start()
     {
+        
         // Create user deck
         
         // Create opponent deck
@@ -18,6 +24,5 @@ public class Main : MonoBehaviour
 
     void Update()
     {
-            
     }
 }
