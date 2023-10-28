@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
 
-public class Card : MonoBehaviour
+public class Card : ScriptableObject
 {
     public int id;
     public string cardName;
@@ -31,4 +31,6 @@ public class Card : MonoBehaviour
         cardName = CardName;
         cardDescription = CardDescription;
     }
+
+
 }
