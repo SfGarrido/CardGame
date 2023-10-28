@@ -18,8 +18,8 @@ public class DisplayCard : MonoBehaviour
     public string cardDescription;
 
     public Text nameText;
-    public Text manaCostText;
-    public Text foodCostText;
+    public Text costManaText;
+    public Text costFoodText;
     public Text attackText;
     public Text healthText;
     public Text descText;
@@ -36,16 +36,15 @@ public class DisplayCard : MonoBehaviour
         cardName = displayCard[0].cardName;
         costFood = displayCard[0].costFood;
         costMana = displayCard[0].costMana;
-        costFood = displayCard[0].costFood;
         attack = displayCard[0].attack;
         health = displayCard[0].health;
         cardDescription = displayCard[0].cardDescription;
 
-        nameText.text = " " + cardName;
-        manaCostText.text = " " + costMana;
-        foodCostText.text = " " + foodCostText;
-        attackText.text = " " + attack;
-        healthText.text = " " + health;
-        descText.text = " " + cardDescription;
+        nameText.text = "" + cardName;
+        costManaText.text = "" + costMana;
+        costFoodText.text = "" + costFood;
+        attackText.text = "" + attack;
+        healthText.text = "" + health;
+        descText.text = "" + cardDescription;
     }
 }

@@ -1408,7 +1408,7 @@ GameObject:
   - component: {fileID: 1160512754}
   - component: {fileID: 1160512753}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: FoodText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1431,7 +1431,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 167.5, y: 184.21}
+  m_SizeDelta: {x: 229.395, y: 233.314}
   m_Pivot: {x: 0.50000006, y: 0.4999999}
 --- !u!114 &1160512753
 MonoBehaviour:
@@ -2667,6 +2667,7 @@ GameObject:
   - component: {fileID: 1645453083}
   - component: {fileID: 1645453082}
   - component: {fileID: 1645453081}
+  - component: {fileID: 1645453085}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -2726,6 +2727,18 @@ Transform:
   - {fileID: 1864762967}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1645453085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645453080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9690e8e72999944b343b7fd6deb07b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1660139672
 GameObject:
   m_ObjectHideFlags: 0
@@ -3657,7 +3670,7 @@ RectTransform:
   m_GameObject: {fileID: 2085497341}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1177337238}
@@ -3669,7 +3682,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 394.3, y: -113.5}
+  m_AnchoredPosition: {x: 386.6, y: 11.1}
   m_SizeDelta: {x: 70, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2085497343
@@ -3719,22 +3732,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2085497341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f14c20986be1d3846a8a1bb08a33cc10, type: 3}
+  m_Script: {fileID: 11500000, guid: 6054abcd25b03644599bf3f7a1a2cbfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayCard:
-  - {fileID: 0}
-  displayId: 0
-  id: 0
-  cardName: 
-  costFood: 0
-  costMana: 0
-  attack: 0
-  health: 0
-  cardDescription: 
+  card: {fileID: 11400000, guid: a80f1116c1277b44aa88a9c24e812b8c, type: 2}
   nameText: {fileID: 1168003048}
-  manaCostText: {fileID: 1696700064}
-  foodCostText: {fileID: 1160512753}
+  costManaText: {fileID: 1696700064}
+  costFoodText: {fileID: 1160512753}
   attackText: {fileID: 1501938958}
   healthText: {fileID: 1592864404}
   descText: {fileID: 416946678}
